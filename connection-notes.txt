@@ -11,3 +11,4 @@ mongodb://localhost:27017 - connect db with server
 
 change localhost into 127.0.0.1
 process - global variable for nodejs
+window - global variable for react
