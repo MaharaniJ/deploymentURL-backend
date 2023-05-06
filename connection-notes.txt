@@ -1,0 +1,12 @@
+step 1: create the connection between node and mongodb
+step 2: select the DB
+step 3: select the collection
+step 4: do the operations(create,update,read,delete)
+step 5: close the connection
+
+if any error throw error
+
+http-protocol - connect client with server
+mongodb://localhost:27017 - connect db with server
+
+change localhost into 127.0.0.1

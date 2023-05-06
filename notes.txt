@@ -18,3 +18,6 @@ postman-token:postman://auth/callback?code=861eb6d4a42521403d2fe54a8f3a2d47c037e
 
 URL parameters - to get specific user
 Query parameters - 
+
+fix-debug launch
+go to the cmd type sh ~scannow
