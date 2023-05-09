@@ -12,3 +12,6 @@ mongodb://localhost:27017 - connect db with server
 change localhost into 127.0.0.1
 process - global variable for nodejs
 window - global variable for react
+
+webserver - it is a software which enable www  to connect http with www web
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDU5ZTA4Yjc2ZmUxY2NhOGE2YTMzNDYiLCJpYXQiOjE2ODM2MTIyNzQsImV4cCI6MTY4MzYxMjg3NH0.GDWqZHP5f877MFX0xlaV04H55ODeBx9Xq1-VCGENR-g
