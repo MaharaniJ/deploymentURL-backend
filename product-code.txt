@@ -1,0 +1,75 @@
+// app.post("/product", async function (req, res) {
+
+//    try{
+//     const connection = await mongoClient.connect(URL)
+//     const db = connection.db(DB)
+//     await db.collection("products").insertOne(req.body)
+//     await connection.close()
+//     res.status(200).json({message:"Data Inserted"})
+//    }
+//    catch(error){
+//     console.log(error)
+//     res.status(500).json({message:"Something went wrong"})
+//    }
+    
+// })
+
+// app.get('/products', async function (req, res) {
+    
+//     try{
+//         const connection = await mongoClient.connect(URL)
+//         const db = connection.db(DB)
+//       let user = await db.collection("products").find().toArray()
+//         await connection.close()
+//         // res.status(200).json({message:"Got data "})
+//         res.json(user)
+//     }
+//     catch(error){
+//         console.log(error)
+//         res.status(500).json({message:"Something went wrong"})
+//        }
+
+//     res.json(users)
+// })
+
+// app.get("/product/:id", async function (req, res) {
+//     try{
+//         const connection = await mongoClient.connect(URL)
+//         const db = connection.db(DB)
+//       let resUser = await db.collection("products").findOne({_id: new mongodb.ObjectId(req.params.id)})
+//         await connection.close()
+        
+//         res.json(resUser)
+//     }
+//     catch(error){
+//         console.log(error)
+//         res.status(500).json({message:"Something went wrong"})
+//        }
+// })
+
+// app.put("/product/:id",async function (req, res) {
+//     try{
+//         const connection = await mongoClient.connect(URL)
+//         const db = connection.db(DB)
+//       let resUser = await db.collection("products").findOneAndUpdate({_id: new mongodb.ObjectId(req.params.id)},{$set:req.body})
+//         await connection.close()
+//         res.json(resUser)
+//     }
+//     catch(error){
+//         console.log(error)
+//         res.status(500).json({message:"Something went wrong"})
+//        }
+// })
+// app.delete('/product/:id',async function (req, res) {
+//     try{
+//         const connection = await mongoClient.connect(URL)
+//         const db = connection.db(DB)
+//       let resUser = await db.collection("products").findOneAndDelete({_id: new mongodb.ObjectId(req.params.id)})
+//         await connection.close()
+//         res.json(resUser)
+//     }
+//     catch(error){
+//         console.log(error)
+//         res.status(500).json({message:"Something went wrong"})
+//        }
+// })
