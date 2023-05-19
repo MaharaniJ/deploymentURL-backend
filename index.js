@@ -12,6 +12,7 @@ const jwt = require("jsonwebtoken")
 const {add} = require('./custome-package')
 let result = add(2,3)
 
+
 const users = []
 //middleware
 app.use(express.json())
@@ -166,6 +167,45 @@ app.post('/login',async function(req,res){
       return  res.status(500).json({message:"Something Went Wrong"})
     }
 })
+//---------------------------------------------------------------
+// app.post("/signup", async function (req, res) {
+//   try {
+//     const connection = await mongoClient.connect(URL);
+//     const db = connection.db(DB);
+//     const existingUser = await db
+//       .collection("users-info")
+//       .findOne({ email: req.body.email });
+
+//     if (existingUser) {
+//       return res.status(409).json({ message: "Email already exists" });
+//     }
+
+//     const salt = await bcrypt.genSalt(10);
+//     const hash = await bcrypt.hash(req.body.password, salt);
+
+//     const newUser = {
+//       email: req.body.email,
+//       password: hash,
+//     };
+
+//     const result = await db.collection("users-info").insertOne(newUser);
+
+//     if (result.insertedId) {
+//       const token = jwt.sign({ _id: result.insertedId }, process.env.SECRET, {
+//         expiresIn: "10m",
+//       });
+//       return res.json({ token });
+//     } else {
+//       return res.status(500).json({ message: "Failed to create user" });
+//     }
+
+//     await connection.close();
+//   } catch (error) {
+//     return res.status(500).json({ message: "Something went wrong" });
+//   }
+// });
+
+
 
 app.listen(port,() => {
     console.log(`Server running at ${port}`);
